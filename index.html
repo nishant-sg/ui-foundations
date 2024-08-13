@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+    <title>project-1</title>
+
+</head>
+<body>
+    <h1>UI Foundations course</h1>
+    <div id="header" class="header">
+        <div class="tab-button active" id="table-tab" onclick="changeTab('table-tab')">Table</div>
+        <div class="tab-button inactive" id="list-tab" onclick="changeTab('list-tab')">List</div>
+        <div class="tab-button inactive" id="flex-tab" onclick="changeTab('flex-tab')">Flex</div>
+    </div>  
+    <div class="tab-content" id="tab-content">
+        <div class="tab-body" id="table-tab">
+            <div class="buttons">
+                <button onclick="insertRow()">+</button>
+                <button onclick="deleteRow()">-</button>
+            </div>
+          <table id="table"></table>
+        </div>
+        <div class="tab-body hide" id="list-tab">
+            <div class="flex-col">
+                <ul class="list" id="list">
+                </ul>
+            </div>
+        </div>
+        <div class="tab-body hide" id="flex-tab">
+            <div class="flex-tab">
+                <div class="flex-col">this is col-1</div>
+                <div class="flex-col">this is col-2</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container hide" id="modal-container">
+        <div class="modal">
+            <div class="cross">
+                <button onclick="closeModal()">X</button>
+            </div>
+            <form id="form" class="form">
+                <input id="form-id" class="hide"/>    
+                <label>Name</label>
+                <input id="form-name"/>
+                <br/>
+                <label>Contact</label>
+                <input id="form-contact"/>
+                <br/>
+                <label >Country</label>
+                <input id="form-country"/>
+                <br/>
+                <div class="button-holder">
+                    <button id="submitBtn" type="submit" >Submit</button> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        populateTable();
+        document.getElementById("form").addEventListener('submit', function(event) { 
+        event.preventDefault(); 
+        console.log("preventing default");
+        // Your form submission logic here 
+        submitButton();
+        }); 
+    </script>
+</body>
+</html>
