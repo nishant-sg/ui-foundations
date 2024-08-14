@@ -2,25 +2,25 @@
   "name": "project_1",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "eslint": "^9.9.0",
-    "globals": "^15.9.0"
-  },
   "scripts": {
-    "pretest": "eslint --ignore-path .gitignore .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+        "pretest": "eslint .  "
   },
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nishant-sg/ui-foundations.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nishant-sg/ui-foundations/issues"
   },
   "homepage": "https://github.com/nishant-sg/ui-foundations#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^8.57.0",
+    "globals": "^15.9.0"
+  },
+  "dependencies": {},
   "description": ""
 }

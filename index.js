@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 const changeTab = (tabID)=>{
-    tabContent = document.getElementById("tab-content");
+    const tabContent = document.getElementById("tab-content");
     var children = tabContent.children;
     for (var i=0; i<children.length; i++){
         if (children[i].id === tabID){
@@ -9,9 +10,9 @@ const changeTab = (tabID)=>{
         }
     }
 
-    header = document.getElementById("header");
+    const header = document.getElementById("header");
     children = header.children;
-    for (var i=0; i<children.length; i++){
+    for (i=0; i<children.length; i++){
         if (children[i].id === tabID){
             children[i].classList.remove('inactive');
             children[i].classList.add('active');
@@ -65,30 +66,40 @@ const populateTable = ()=>{
         var row = table.insertRow(i+1);
         var temp = row.insertCell(0);
         temp.innerHTML = "<input id='"+i+"-checkbox' type='checkbox'>";
-        var temp = row.insertCell(1);
+        temp = row.insertCell(1);
         temp.innerHTML = user.name;
-        var temp = row.insertCell(2);
+        temp = row.insertCell(2);
         temp.innerHTML = user.contact;
-        var temp = row.insertCell(3);
+        temp = row.insertCell(3);
         temp.innerHTML = user.country;
-        var temp = row.insertCell(4);
+        temp = row.insertCell(4);
         temp.innerHTML = "<button onclick='updateData("+i+")'>Update</button>";
     }
     const list = document.getElementById("list");
     list.innerHTML="";
-    for(var i=0; i<tableData.length;i++){
-        var temp = document.createElement("li");
+    for(i=0; i<tableData.length;i++){
+        temp = document.createElement("li");
         temp.innerHTML = tableData[i].name;
         list.append(temp);
     }
 }
 
-insertRow = ()=>{
+const showModal = ()=>{
+    const modal = document.getElementById("modal-container");
+    modal.classList.remove("hide");
+}
+
+const closeModal = ()=>{
+    const modal = document.getElementById("modal-container");
+    modal.classList.add("hide");
+}
+
+const insertRow = ()=>{
     showModal();
     populateTable();
 }
 
-deleteRow = ()=>{
+const deleteRow = ()=>{
     if (tableData.length===0){
         alert("no more elements to remove");
         return ;
@@ -103,7 +114,7 @@ deleteRow = ()=>{
     populateTable();
 }
 
-updateData = (key)=>{
+const updateData = (key)=>{
     showModal();
     document.getElementById("form-id").value = key;
     document.getElementById("form-name").value = tableData[key].name;
@@ -111,7 +122,7 @@ updateData = (key)=>{
     document.getElementById("form-country").value = tableData[key].country;
 }
 
-submitButton = ()=>{
+const submitButton = ()=>{
     var key = document.getElementById("form-id").value;
     if (key==""){
         key = (tableData.length).toString();
@@ -128,14 +139,4 @@ submitButton = ()=>{
     closeModal();
     populateTable();
     document.getElementById("form-id").value = "";
-}
-
-showModal = ()=>{
-    const modal = document.getElementById("modal-container");
-    modal.classList.remove("hide");
-}
-
-closeModal = ()=>{
-    const modal = document.getElementById("modal-container");
-    modal.classList.add("hide");
 }
