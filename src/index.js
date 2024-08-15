@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-const changeTab = (tabID)=>{
+export const changeTab = (tabID)=>{
     const tabContent = document.getElementById("tab-content");
     var children = tabContent.children;
     for (var i=0; i<children.length; i++){
@@ -56,7 +55,7 @@ var tableData = [
 ]
 
 
-const populateTable = ()=>{
+export const populateTable = ()=>{
     const table = document.getElementById("table");
     table.innerHTML="";
     var head = table.createTHead().insertRow(0);
@@ -84,22 +83,22 @@ const populateTable = ()=>{
     }
 }
 
-const showModal = ()=>{
+export const showModal = ()=>{
     const modal = document.getElementById("modal-container");
     modal.classList.remove("hide");
 }
 
-const closeModal = ()=>{
+export const closeModal = ()=>{
     const modal = document.getElementById("modal-container");
     modal.classList.add("hide");
 }
 
-const insertRow = ()=>{
+export const insertRow = ()=>{
     showModal();
     populateTable();
 }
 
-const deleteRow = ()=>{
+export const deleteRow = ()=>{
     if (tableData.length===0){
         alert("no more elements to remove");
         return ;
@@ -114,7 +113,7 @@ const deleteRow = ()=>{
     populateTable();
 }
 
-const updateData = (key)=>{
+export const updateData = (key)=>{
     showModal();
     document.getElementById("form-id").value = key;
     document.getElementById("form-name").value = tableData[key].name;
@@ -122,7 +121,7 @@ const updateData = (key)=>{
     document.getElementById("form-country").value = tableData[key].country;
 }
 
-const submitButton = ()=>{
+export const submitButton = ()=>{
     var key = document.getElementById("form-id").value;
     if (key==""){
         key = (tableData.length).toString();
