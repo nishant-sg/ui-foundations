@@ -1,3 +1,5 @@
+import './index.css';
+
 export const changeTab = (tabID)=>{
     const tabContent = document.getElementById("tab-content");
     var children = tabContent.children;

@@ -4,4 +4,12 @@ module.exports = {
       filename: 'main.js',
     libraryTarget: "umd",
     },
+    module: {
+      rules: [
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+      ],
+    },
   };
