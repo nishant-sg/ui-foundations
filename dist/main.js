@@ -1,1 +1,877 @@
-!function(n,e){if("object"==typeof exports&&"object"==typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t=e();for(var o in t)("object"==typeof exports?exports:n)[o]=t[o]}}(self,(()=>(()=>{"use strict";var n={523:(n,e,t)=>{t.d(e,{A:()=>c});var o=t(601),r=t.n(o),a=t(314),i=t.n(a)()(r());i.push([n.id,":root {\n    --c1:#E7E8D8;\n    --c2:#BC9F8B;\n    --c3:#CADABF;\n    --c4:#B5CFB7;\n    font-family:sans-serif;\n}\n\nh1{\n    padding-left: 30px;\n}\n\nbody {\n    background-color: var(--c1);\n}\n\nul {\n    margin: 0;\n    background-color: var(--c1);\n}\n\ntable{\n    width: 100%;\n    margin: auto;\n    border:2px solid;\n}\n\ntr{\n    height:5vh;\n}\n\ntr:hover td{\n    background-color: var(--c3);\n}\n\ntd{\n    background-color: var(--c4);\n    text-align: center;\n}\n\nth{\n    background-color: var(--c2);\n    text-align: center;\n}\n\n.header{\n    height: 5vh;\n    width: auto;\n    background-color: var(--c1);\n    display: inline-flex;\n    padding-left: 30px;\n}\n\n.tab-button{\n    height: 100%;\n    width: 130px;\n    border-radius:10px 10px 0px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    cursor: pointer;\n}\n\n.tab-content{\n    height: 80vh;\n    width: auto;\n    padding-left: 30px;\n    padding-right: 30px;\n    padding-top:30px;\n    background-color: var(--c1);\n    border-top: 2px solid black;\n}\n\n.tab-body{\n    background-color: var(--c1);\n    width: 80%;\n    margin: auto;\n}\n\n.buttons{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: flex-end;\n}\n\n.button-holder{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n}\n\n.buttons button{\n    font-size: larger;\n    width: 30px;\n    height: 30px;\n    margin-right: 10px;\n    margin-bottom: 10px;\n    cursor: pointer;\n}\n\n.flex-tab{\n    display: flex;\n    flex-direction: row;\n}\n\n.flex-col{\n    height: 50vh;\n    width: 100%;\n    background-color: var(--c4);\n    margin: 20px;\n    padding: 20px;\n    border-radius: 20px;\n}\n\n.modal-container{\n    height: 100vh;\n    width:100vw;\n    top: 0;\n    left: 0;\n    z-index: 1;\n    background-color: transparent;\n    position: fixed;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.modal{\n    height: 50vh;\n    width:70vw;\n    background-color: var(--c3);\n    margin: 40px;\n    border-radius: 20px;\n    border: 2px solid;\n}\n\n.cross {\n    display: flex;\n    justify-content: end;\n    margin: 10px;\n}\n\n.cross button{\n    width: 25px;\n    height: 25px;\n    border-radius: 5px;\n}\n\n.form{\n    width: fit-content;\n    margin: auto;\n    padding: 30px;\n    padding-left: 50px;\n}\n\n.form label{\n    display: inline-block;\n    width: 100px;\n    font-size: larger;\n    margin-bottom: 10px;\n    font-weight: 600;\n}\n\n.form input{\n    box-shadow: none;\n    border: 2px solid var(--c4);\n    border-radius: 10px;\n    font-size: larger;\n    margin-bottom: 10px;\n    padding: 10px;\n    background-color: var(--c1);\n}\n\n.form button{\n    width: 150px;\n    height: 50px;\n    font-size: medium;\n    font-weight: 800;\n    border-radius: 20px;\n    background-color: var(--c1);\n    border: 2px solid var(--c4);\n}\n\n.list{\n    padding: 50px;\n    background-color: var(--c4);\n    font-size: larger;\n    font-weight: bold;\n}\n\n.hide{\n    display: none;\n}\n\n.active{\n    border-top:2px solid;\n    border-right:2px solid ;\n    border-left:2px solid;\n    background-color: var(--c2);\n}\n\n.inactive{\n    background-color: var(--c3);\n    border: 0px solid;\n}",""]);const c=i},314:n=>{n.exports=function(n){var e=[];return e.toString=function(){return this.map((function(e){var t="",o=void 0!==e[5];return e[4]&&(t+="@supports (".concat(e[4],") {")),e[2]&&(t+="@media ".concat(e[2]," {")),o&&(t+="@layer".concat(e[5].length>0?" ".concat(e[5]):""," {")),t+=n(e),o&&(t+="}"),e[2]&&(t+="}"),e[4]&&(t+="}"),t})).join("")},e.i=function(n,t,o,r,a){"string"==typeof n&&(n=[[null,n,void 0]]);var i={};if(o)for(var c=0;c<this.length;c++){var d=this[c][0];null!=d&&(i[d]=!0)}for(var l=0;l<n.length;l++){var s=[].concat(n[l]);o&&i[s[0]]||(void 0!==a&&(void 0===s[5]||(s[1]="@layer".concat(s[5].length>0?" ".concat(s[5]):""," {").concat(s[1],"}")),s[5]=a),t&&(s[2]?(s[1]="@media ".concat(s[2]," {").concat(s[1],"}"),s[2]=t):s[2]=t),r&&(s[4]?(s[1]="@supports (".concat(s[4],") {").concat(s[1],"}"),s[4]=r):s[4]="".concat(r)),e.push(s))}},e}},601:n=>{n.exports=function(n){return n[1]}},72:n=>{var e=[];function t(n){for(var t=-1,o=0;o<e.length;o++)if(e[o].identifier===n){t=o;break}return t}function o(n,o){for(var a={},i=[],c=0;c<n.length;c++){var d=n[c],l=o.base?d[0]+o.base:d[0],s=a[l]||0,u="".concat(l," ").concat(s);a[l]=s+1;var p=t(u),f={css:d[1],media:d[2],sourceMap:d[3],supports:d[4],layer:d[5]};if(-1!==p)e[p].references++,e[p].updater(f);else{var m=r(f,o);o.byIndex=c,e.splice(c,0,{identifier:u,updater:m,references:1})}i.push(u)}return i}function r(n,e){var t=e.domAPI(e);return t.update(n),function(e){if(e){if(e.css===n.css&&e.media===n.media&&e.sourceMap===n.sourceMap&&e.supports===n.supports&&e.layer===n.layer)return;t.update(n=e)}else t.remove()}}n.exports=function(n,r){var a=o(n=n||[],r=r||{});return function(n){n=n||[];for(var i=0;i<a.length;i++){var c=t(a[i]);e[c].references--}for(var d=o(n,r),l=0;l<a.length;l++){var s=t(a[l]);0===e[s].references&&(e[s].updater(),e.splice(s,1))}a=d}}},659:n=>{var e={};n.exports=function(n,t){var o=function(n){if(void 0===e[n]){var t=document.querySelector(n);if(window.HTMLIFrameElement&&t instanceof window.HTMLIFrameElement)try{t=t.contentDocument.head}catch(n){t=null}e[n]=t}return e[n]}(n);if(!o)throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");o.appendChild(t)}},540:n=>{n.exports=function(n){var e=document.createElement("style");return n.setAttributes(e,n.attributes),n.insert(e,n.options),e}},56:(n,e,t)=>{n.exports=function(n){var e=t.nc;e&&n.setAttribute("nonce",e)}},825:n=>{n.exports=function(n){if("undefined"==typeof document)return{update:function(){},remove:function(){}};var e=n.insertStyleElement(n);return{update:function(t){!function(n,e,t){var o="";t.supports&&(o+="@supports (".concat(t.supports,") {")),t.media&&(o+="@media ".concat(t.media," {"));var r=void 0!==t.layer;r&&(o+="@layer".concat(t.layer.length>0?" ".concat(t.layer):""," {")),o+=t.css,r&&(o+="}"),t.media&&(o+="}"),t.supports&&(o+="}");var a=t.sourceMap;a&&"undefined"!=typeof btoa&&(o+="\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(a))))," */")),e.styleTagTransform(o,n,e.options)}(e,n,t)},remove:function(){!function(n){if(null===n.parentNode)return!1;n.parentNode.removeChild(n)}(e)}}}},113:n=>{n.exports=function(n,e){if(e.styleSheet)e.styleSheet.cssText=n;else{for(;e.firstChild;)e.removeChild(e.firstChild);e.appendChild(document.createTextNode(n))}}}},e={};function t(o){var r=e[o];if(void 0!==r)return r.exports;var a=e[o]={id:o,exports:{}};return n[o](a,a.exports,t),a.exports}t.n=n=>{var e=n&&n.__esModule?()=>n.default:()=>n;return t.d(e,{a:e}),e},t.d=(n,e)=>{for(var o in e)t.o(e,o)&&!t.o(n,o)&&Object.defineProperty(n,o,{enumerable:!0,get:e[o]})},t.o=(n,e)=>Object.prototype.hasOwnProperty.call(n,e),t.r=n=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},t.nc=void 0;var o={};t.r(o),t.d(o,{changeTab:()=>b,closeModal:()=>E,deleteRow:()=>k,insertRow:()=>I,populateTable:()=>x,showModal:()=>w,submitButton:()=>B,updateData:()=>T});var r=t(72),a=t.n(r),i=t(825),c=t.n(i),d=t(659),l=t.n(d),s=t(56),u=t.n(s),p=t(540),f=t.n(p),m=t(113),h=t.n(m),g=t(523),v={};v.styleTagTransform=h(),v.setAttributes=u(),v.insert=l().bind(null,"head"),v.domAPI=c(),v.insertStyleElement=f(),a()(g.A,v),g.A&&g.A.locals&&g.A.locals;const b=n=>{for(var e=document.getElementById("tab-content").children,t=0;t<e.length;t++)e[t].id===n?e[t].classList.remove("hide"):e[t].classList.add("hide");for(e=document.getElementById("header").children,t=0;t<e.length;t++)e[t].id===n?(e[t].classList.remove("inactive"),e[t].classList.add("active")):e[t].classList.add("inactive")};var y=[{name:"Rahul",contact:"12345789",country:"India",id:"1"},{name:"Raj",contact:"987654321",country:"USA",id:"2"},{name:"Rohan",contact:"222222222",country:"Japan",id:"3"},{name:"Kapil",contact:"000000000",country:"China",id:"4"},{name:"Ram",contact:"456456456",country:"India",id:"5"}];const x=()=>{const n=document.getElementById("table");n.innerHTML="",n.createTHead().insertRow(0).innerHTML="<th>Select</th><th>Name</th><th>Contact</th><th>Country</th><th>Update</th>";for(var e=0;e<y.length;e++){var t=y[e],o=n.insertRow(e+1),r=o.insertCell(0);r.innerHTML="<input id='"+e+"-checkbox' type='checkbox'>",(r=o.insertCell(1)).innerHTML=t.name,(r=o.insertCell(2)).innerHTML=t.contact,(r=o.insertCell(3)).innerHTML=t.country,(r=o.insertCell(4)).innerHTML="<button onclick='updateData("+e+")'>Update</button>"}const a=document.getElementById("list");for(a.innerHTML="",e=0;e<y.length;e++)(r=document.createElement("li")).innerHTML=y[e].name,a.append(r)},w=()=>{document.getElementById("modal-container").classList.remove("hide")},E=()=>{document.getElementById("modal-container").classList.add("hide")},I=()=>{w(),x()},k=()=>{if(0!==y.length){for(var n=y.length-1;n>-1;n--)document.getElementById(n+"-checkbox").checked&&y.splice(n,1);x()}else alert("no more elements to remove")},T=n=>{w(),document.getElementById("form-id").value=n,document.getElementById("form-name").value=y[n].name,document.getElementById("form-contact").value=y[n].contact,document.getElementById("form-country").value=y[n].country},B=()=>{var n=document.getElementById("form-id").value;""==n&&(n=y.length.toString(),y.push({name:"Rahul",contact:"12345789",country:"India",id:n})),y[n].name=document.getElementById("form-name").value,y[n].contact=document.getElementById("form-contact").value,y[n].country=document.getElementById("form-country").value,E(),x(),document.getElementById("form-id").value=""};return o})()));
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(self, () => {
+return /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+/* 2 */
+/***/ ((module) => {
+
+
+
+var stylesInDOM = [];
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+  return result;
+}
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+    identifiers.push(identifier);
+  }
+  return identifiers;
+}
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+  return updater;
+}
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+    var newLastIdentifiers = modulesToDom(newList, options);
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+      var _index = getIndexByIdentifier(_identifier);
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
+
+/***/ }),
+/* 3 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+  var needLayer = typeof obj.layer !== "undefined";
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+  css += obj.css;
+  if (needLayer) {
+    css += "}";
+  }
+  if (obj.media) {
+    css += "}";
+  }
+  if (obj.supports) {
+    css += "}";
+  }
+  var sourceMap = obj.sourceMap;
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  }
+
+  // For old IE
+  /* istanbul ignore if  */
+  options.styleTagTransform(css, styleElement, options.options);
+}
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+  styleElement.parentNode.removeChild(styleElement);
+}
+
+/* istanbul ignore next  */
+function domAPI(options) {
+  if (typeof document === "undefined") {
+    return {
+      update: function update() {},
+      remove: function remove() {}
+    };
+  }
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+module.exports = domAPI;
+
+/***/ }),
+/* 4 */
+/***/ ((module) => {
+
+
+
+var memo = {};
+
+/* istanbul ignore next  */
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target);
+
+    // Special case to return head of iframe instead of iframe itself
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+    memo[target] = styleTarget;
+  }
+  return memo[target];
+}
+
+/* istanbul ignore next  */
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+  target.appendChild(style);
+}
+module.exports = insertBySelector;
+
+/***/ }),
+/* 5 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+/* 6 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+module.exports = insertStyleElement;
+
+/***/ }),
+/* 7 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+module.exports = styleTagTransform;
+
+/***/ }),
+/* 8 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `:root {
+  --c1: #e7e8d8;
+  --c2: #bc9f8b;
+  --c3: #cadabf;
+  --c4: #b5cfb7;
+  font-family: sans-serif;
+}
+
+h1 {
+  padding-left: 30px;
+}
+
+body {
+  background-color: var(--c1);
+}
+
+ul {
+  margin: 0;
+  background-color: var(--c1);
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  border: 2px solid;
+}
+
+tr {
+  height: 5vh;
+}
+
+tr:hover td {
+  background-color: var(--c3);
+}
+
+td {
+  background-color: var(--c4);
+  text-align: center;
+}
+
+th {
+  background-color: var(--c2);
+  text-align: center;
+}
+
+.header {
+  height: 5vh;
+  width: auto;
+  background-color: var(--c1);
+  display: inline-flex;
+  padding-left: 30px;
+}
+
+.tab-button {
+  height: 100%;
+  width: 130px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tab-content {
+  height: 80vh;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  background-color: var(--c1);
+  border-top: 2px solid black;
+}
+
+.tab-body {
+  background-color: var(--c1);
+  width: 80%;
+  margin: auto;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttons button {
+  font-size: larger;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.flex-tab {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--c4);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  height: 50vh;
+  width: 70vw;
+  background-color: var(--c3);
+  margin: 40px;
+  border-radius: 20px;
+  border: 2px solid;
+}
+
+.cross {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+
+.cross button {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.form {
+  width: fit-content;
+  margin: auto;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.form label {
+  display: inline-block;
+  width: 100px;
+  font-size: larger;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.form input {
+  box-shadow: none;
+  border: 2px solid var(--c4);
+  border-radius: 10px;
+  font-size: larger;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--c1);
+}
+
+.form button {
+  width: 150px;
+  height: 50px;
+  font-size: medium;
+  font-weight: 800;
+  border-radius: 20px;
+  background-color: var(--c1);
+  border: 2px solid var(--c4);
+}
+
+.list {
+  padding: 50px;
+  background-color: var(--c4);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  background-color: var(--c2);
+}
+
+.inactive {
+  background-color: var(--c3);
+  border: 0px solid;
+}
+`, ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 9 */
+/***/ ((module) => {
+
+
+
+module.exports = function (i) {
+  return i[1];
+};
+
+/***/ }),
+/* 10 */
+/***/ ((module) => {
+
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = [];
+
+  // return the list of modules as css string
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+      content += cssWithMappingToString(item);
+      if (needLayer) {
+        content += "}";
+      }
+      if (item[2]) {
+        content += "}";
+      }
+      if (item[4]) {
+        content += "}";
+      }
+      return content;
+    }).join("");
+  };
+
+  // import a list of modules into the list
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+    var alreadyImportedModules = {};
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+      list.push(item);
+    }
+  };
+  return list;
+};
+
+/***/ })
+/******/ 	]);
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   changeTab: () => (/* binding */ changeTab),
+/* harmony export */   closeModal: () => (/* binding */ closeModal),
+/* harmony export */   deleteRow: () => (/* binding */ deleteRow),
+/* harmony export */   insertRow: () => (/* binding */ insertRow),
+/* harmony export */   populateTable: () => (/* binding */ populateTable),
+/* harmony export */   showModal: () => (/* binding */ showModal),
+/* harmony export */   submitButton: () => (/* binding */ submitButton),
+/* harmony export */   updateData: () => (/* binding */ updateData)
+/* harmony export */ });
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+
+
+// change tabs
+const changeTab = (tabID) => {
+  const tabContent = document.getElementById("tab-content");
+  var children = tabContent.children;
+  for (var i = 0; i < children.length; i++) {
+    if (children[i].id === tabID) {
+      children[i].classList.remove("hide");
+    } else {
+      children[i].classList.add("hide");
+    }
+  }
+
+  const header = document.getElementById("header");
+  children = header.children;
+  for (i = 0; i < children.length; i++) {
+    if (children[i].id === tabID) {
+      children[i].classList.remove("inactive");
+      children[i].classList.add("active");
+    } else {
+      children[i].classList.add("inactive");
+    }
+  }
+};
+
+// default table data
+var tableData = [
+  {
+    name: "Rahul",
+    contact: "12345789",
+    country: "India",
+    id: "1",
+  },
+  {
+    name: "Raj",
+    contact: "987654321",
+    country: "USA",
+    id: "2",
+  },
+  {
+    name: "Rohan",
+    contact: "222222222",
+    country: "Japan",
+    id: "3",
+  },
+  {
+    name: "Kapil",
+    contact: "000000000",
+    country: "China",
+    id: "4",
+  },
+  {
+    name: "Ram",
+    contact: "456456456",
+    country: "India",
+    id: "5",
+  },
+];
+
+// render the table (with updated tableData)
+const populateTable = () => {
+  const table = document.getElementById("table");
+  table.innerHTML = "";
+  var head = table.createTHead().insertRow(0);
+  head.innerHTML =
+    "<th>Select</th><th>Name</th><th>Contact</th><th>Country</th><th>Update</th>";
+  for (var i = 0; i < tableData.length; i++) {
+    var user = tableData[i];
+    var row = table.insertRow(i + 1);
+    var temp = row.insertCell(0);
+    temp.innerHTML = "<input id='" + i + "-checkbox' type='checkbox'>";
+    temp = row.insertCell(1);
+    temp.innerHTML = user.name;
+    temp = row.insertCell(2);
+    temp.innerHTML = user.contact;
+    temp = row.insertCell(3);
+    temp.innerHTML = user.country;
+    temp = row.insertCell(4);
+    temp.innerHTML = "<button onclick='updateData(" + i + ")'>Update</button>";
+  }
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  for (i = 0; i < tableData.length; i++) {
+    temp = document.createElement("li");
+    temp.innerHTML = tableData[i].name;
+    list.append(temp);
+  }
+};
+
+// show modal
+const showModal = () => {
+  const modal = document.getElementById("modal-container");
+  modal.classList.remove("hide");
+};
+
+// hide modal
+const closeModal = () => {
+  const modal = document.getElementById("modal-container");
+  modal.classList.add("hide");
+};
+
+// insert row into tableData
+const insertRow = () => {
+  showModal();
+  populateTable();
+};
+
+// remove row into tableData
+const deleteRow = () => {
+  if (tableData.length === 0) {
+    alert("no more elements to remove");
+    return;
+  }
+  for (var i = tableData.length - 1; i > -1; i--) {
+    const temp = document.getElementById(i + "-checkbox");
+    if (temp.checked) {
+      tableData.splice(i, 1);
+    }
+  }
+
+  populateTable();
+};
+
+// update tableData[key] from the form
+const updateData = (key) => {
+  showModal();
+  document.getElementById("form-id").value = key;
+  document.getElementById("form-name").value = tableData[key].name;
+  document.getElementById("form-contact").value = tableData[key].contact;
+  document.getElementById("form-country").value = tableData[key].country;
+};
+
+// submit the form-data (update tableData, close modal, re-render table)
+const submitButton = () => {
+  var key = document.getElementById("form-id").value;
+  if (key == "") {
+    key = tableData.length.toString();
+    tableData.push({
+      name: "Rahul",
+      contact: "12345789",
+      country: "India",
+      id: key,
+    });
+  }
+  tableData[key].name = document.getElementById("form-name").value;
+  tableData[key].contact = document.getElementById("form-contact").value;
+  tableData[key].country = document.getElementById("form-country").value;
+  closeModal();
+  populateTable();
+  document.getElementById("form-id").value = "";
+};
+
+/******/ 	return __webpack_exports__;
+/******/ })()
+;
+});

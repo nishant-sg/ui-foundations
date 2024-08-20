@@ -1,207 +1,207 @@
 :root {
-    --c1:#E7E8D8;
-    --c2:#BC9F8B;
-    --c3:#CADABF;
-    --c4:#B5CFB7;
-    font-family:sans-serif;
+  --c1: #e7e8d8;
+  --c2: #bc9f8b;
+  --c3: #cadabf;
+  --c4: #b5cfb7;
+  font-family: sans-serif;
 }
 
-h1{
-    padding-left: 30px;
+h1 {
+  padding-left: 30px;
 }
 
 body {
-    background-color: var(--c1);
+  background-color: var(--c1);
 }
 
 ul {
-    margin: 0;
-    background-color: var(--c1);
+  margin: 0;
+  background-color: var(--c1);
 }
 
-table{
-    width: 100%;
-    margin: auto;
-    border:2px solid;
+table {
+  width: 100%;
+  margin: auto;
+  border: 2px solid;
 }
 
-tr{
-    height:5vh;
+tr {
+  height: 5vh;
 }
 
-tr:hover td{
-    background-color: var(--c3);
+tr:hover td {
+  background-color: var(--c3);
 }
 
-td{
-    background-color: var(--c4);
-    text-align: center;
+td {
+  background-color: var(--c4);
+  text-align: center;
 }
 
-th{
-    background-color: var(--c2);
-    text-align: center;
+th {
+  background-color: var(--c2);
+  text-align: center;
 }
 
-.header{
-    height: 5vh;
-    width: auto;
-    background-color: var(--c1);
-    display: inline-flex;
-    padding-left: 30px;
+.header {
+  height: 5vh;
+  width: auto;
+  background-color: var(--c1);
+  display: inline-flex;
+  padding-left: 30px;
 }
 
-.tab-button{
-    height: 100%;
-    width: 130px;
-    border-radius:10px 10px 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.tab-button {
+  height: 100%;
+  width: 130px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.tab-content{
-    height: 80vh;
-    width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top:30px;
-    background-color: var(--c1);
-    border-top: 2px solid black;
+.tab-content {
+  height: 80vh;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  background-color: var(--c1);
+  border-top: 2px solid black;
 }
 
-.tab-body{
-    background-color: var(--c1);
-    width: 80%;
-    margin: auto;
+.tab-body {
+  background-color: var(--c1);
+  width: 80%;
+  margin: auto;
 }
 
-.buttons{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.button-holder{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.button-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.buttons button{
-    font-size: larger;
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+.buttons button {
+  font-size: larger;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.flex-tab{
-    display: flex;
-    flex-direction: row;
+.flex-tab {
+  display: flex;
+  flex-direction: row;
 }
 
-.flex-col{
-    height: 50vh;
-    width: 100%;
-    background-color: var(--c4);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 20px;
+.flex-col {
+  height: 50vh;
+  width: 100%;
+  background-color: var(--c4);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
-.modal-container{
-    height: 100vh;
-    width:100vw;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: transparent;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.modal{
-    height: 50vh;
-    width:70vw;
-    background-color: var(--c3);
-    margin: 40px;
-    border-radius: 20px;
-    border: 2px solid;
+.modal {
+  height: 50vh;
+  width: 70vw;
+  background-color: var(--c3);
+  margin: 40px;
+  border-radius: 20px;
+  border: 2px solid;
 }
 
 .cross {
-    display: flex;
-    justify-content: end;
-    margin: 10px;
+  display: flex;
+  justify-content: end;
+  margin: 10px;
 }
 
-.cross button{
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
+.cross button {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
 }
 
-.form{
-    width: fit-content;
-    margin: auto;
-    padding: 30px;
-    padding-left: 50px;
+.form {
+  width: fit-content;
+  margin: auto;
+  padding: 30px;
+  padding-left: 50px;
 }
 
-.form label{
-    display: inline-block;
-    width: 100px;
-    font-size: larger;
-    margin-bottom: 10px;
-    font-weight: 600;
+.form label {
+  display: inline-block;
+  width: 100px;
+  font-size: larger;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.form input{
-    box-shadow: none;
-    border: 2px solid var(--c4);
-    border-radius: 10px;
-    font-size: larger;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: var(--c1);
+.form input {
+  box-shadow: none;
+  border: 2px solid var(--c4);
+  border-radius: 10px;
+  font-size: larger;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--c1);
 }
 
-.form button{
-    width: 150px;
-    height: 50px;
-    font-size: medium;
-    font-weight: 800;
-    border-radius: 20px;
-    background-color: var(--c1);
-    border: 2px solid var(--c4);
+.form button {
+  width: 150px;
+  height: 50px;
+  font-size: medium;
+  font-weight: 800;
+  border-radius: 20px;
+  background-color: var(--c1);
+  border: 2px solid var(--c4);
 }
 
-.list{
-    padding: 50px;
-    background-color: var(--c4);
-    font-size: larger;
-    font-weight: bold;
+.list {
+  padding: 50px;
+  background-color: var(--c4);
+  font-size: larger;
+  font-weight: bold;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
-.active{
-    border-top:2px solid;
-    border-right:2px solid ;
-    border-left:2px solid;
-    background-color: var(--c2);
+.active {
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  background-color: var(--c2);
 }
 
-.inactive{
-    background-color: var(--c3);
-    border: 0px solid;
+.inactive {
+  background-color: var(--c3);
+  border: 0px solid;
 }
